@@ -2,7 +2,7 @@
 # Prediction of turning points
 # Author: Yanwen Zhang
 # Date: Apr 2, 2020
-# Description: In the paper <Tracking_and_forecasting_milepost_moments_of_the_epidemic_in_the_early_outbreak__framework_and_applications_to_the_COVID_19>, we proposed a method to predict "turning points", whose main idea is using the change velocity of infection rate (InfectionRateVelocity) and the change velocity of completion rate(RemovedRateVelocity) to forcast newly diagnoses cases and number of cases treated in the hospital in the future. Here, we proposed one of the algorithms to calculate the change rate and then make the prediction, which is the method we used in our paper mentioned above.
+# Description: In the paper <Tracking_and_forecasting_milepost_moments_of_the_epidemic_in_the_early_outbreak__framework_and_applications_to_the_COVID_19>, we proposed a method to predict "turning points", whose main idea is using the change velocity of infection rate (InfectionRateVelocity) and the change velocity of completion rate(RemovedRateVelocity) to forcast newly diagnoses cases and number of cases treated in the hospital in the future. Here, we proposed one of the algorithms to calculate the change rate and then make the prediction, which is the method we used in our paper mentioned above. At last, we offer a simple example to implement this method.
 #=======================================
 
 
@@ -263,7 +263,7 @@ total_pre<-function(wd,M,T){
   return(prediction)
 }
 
-
+#================================================
 # A simply example with M=5.
 # Users can change begining time T and Time window M.
 filepath="Please input your filepath here"
