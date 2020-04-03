@@ -16,11 +16,8 @@ It worth noticing that, in the application part of our paper, we only focus on t
 
 ## Overall Description of Code
 In our code, there are four functions, i.e. Iconicfun, CalculateVelocity, Prediction and totalPrediction, with a simple example followed.
-
+### Detailed Description
 Iconicfun: Using original data to calculate the iconic indicators we defined in our paper.
-
 CalculateVelocity: Compute the velocity of infection rate change and completion rate change.
-
 Prediction: Predict future infection rate, removed rate, confirmed cases and number of patints treated in hospital of each days.
-
 totalPrediction: Integrate all functions above, and handle a special situation (in case removedrate>1, which is conterintuitive).
