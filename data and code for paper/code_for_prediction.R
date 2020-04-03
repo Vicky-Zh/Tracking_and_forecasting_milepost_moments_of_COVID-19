@@ -207,7 +207,7 @@ Prediction<-function(date, confirmed, inhospitals, infectionrate, removedrate, I
 
 
 
-total_pre<-function(wd,M,T){
+totalPrediction<-function(wd,M,T){
   #=====================================
   # Integrate functions above, and handle a special situation (removedrate>1).
   #
@@ -274,7 +274,7 @@ for (i in 1:32){
   print(i)
   T=as.character(as.Date("2020-01-29")+i-1)
   print(T)
-  x=total_pre(wd, M, T)
+  x=totalPrediction(wd, M, T)
   result[i,1]=as.character(x[1,3])
   result[i,2]=as.character(x[1,4])
   result[i,3]=as.character(x[1,5])
