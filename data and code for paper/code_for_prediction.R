@@ -232,6 +232,13 @@ totalPrediction<-function(wd,M,T){
   infectionrate=iconic$infectionrate
   removedrate=iconic$removedrate
   
+  f=data.frame(date=date,
+               confirmed=confirmed,
+               inhospitals=inhospitals,
+               infectionrate=infectionrate,
+               removedrate=removedrate)
+  f$date=as.Date(f$date)  
+  
   velocity=CalculateVelocity(date, confirmed, inhospitals, infectionrate, removedrate, M, T)
   InfectionRateVelocity=as.numeric(velocity["InfectionRateVelocity"])
   RemovedRateVelocity=as.numeric(velocity["RemovedRateVelocity"])
